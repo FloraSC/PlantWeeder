@@ -1,12 +1,13 @@
+__author__ = "Nolan Jimenez"
 import pprint
 
 from googleapiclient.discovery import build
 
 def main():
-    service = build("customsearch", "v1", developerKey="AIzaSyCbANyRJ7Bj18DiQ8B4WKDDbN-nS-ujVjc")
+    service = build("customsearch", "v1", developerKey="")
     res = service.cse().list(
         q='plants',
-        cx='013125366642420418874:8iebi6x9bd6',
+        cx='',
     ).execute()
     pprint.pprint(res)
 
